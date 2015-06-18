@@ -26,14 +26,45 @@ $(function() {
     var adjective = $("input[name=adjective]").val();
     var adjPost;
 
+    var verb = $("input[name=verb]").val();
+    var verbPost;
+
+    var noun = $("input[name=noun]").val();
+    var nounPost;
+
     if (adjective) {
       adjPost = {word: adjective};
+
       $.post("adjective", adjPost, function(response) {
         var adjectiveRes = response.msg;
         $("#adjectiveRes").text(adjectiveRes);
       });
+
+      // Clear field after submission
+      $("input[name=adjective]").val('');
+
+    };
+    if (verb) {
+      verbPost = {word: verb};
+
+      $.post("verb", verbPost, function(response) {
+        var verbRes = response.msg;
+        $("#verbRes").text(verbRes);
+      });
+
+      // Clear field after submission
+      $("input[name=verb]").val('');
+    };
+    if (noun) {
+      nounPost = {word: noun};
+
+      $.post("noun", nounPost, function(response) {
+        var nounRes = response.msg;
+        $("#nounRes").text(nounRes);
+      });
+
+      // Clear field after submission
+      $("input[name=noun]").val('');
     }
-
   });
-
 });

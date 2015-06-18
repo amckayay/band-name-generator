@@ -1,0 +1,20 @@
+@import url('http://fonts.googleapis.com/css?family=Lobster');
+@import url('http://fonts.googleapis.com/css?family=Roboto');
+
+h1 {
+  font-family: 'Lobster', fantasy;
+}
+
+body {
+  margin-top: 50px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.random-name {
+  height: 19px;
+}
+
+#submitWords div {
+  margin: 15px 0;
+}

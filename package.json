@@ -1,13 +1,13 @@
 {
-  "name": "simple-site",
-  "version": "0.0.0",
+  "name": "a-band-by-alison",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stephanielingwood/band-name-generator"
+    "url": "https://github.com/amckayay/band-name-generator"
   },
   "description": "Example Site for JavaScript F2 at Code Fellows",
   "dependencies": {
-    "body-parser": "^1.12.4",
+    "body-parser": "^1.13.0",
     "express": "^4.12.4"
   },
   "devDependencies": {
